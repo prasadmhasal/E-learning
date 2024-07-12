@@ -11,7 +11,7 @@ namespace E_learning.login
 {
 
 
-    public partial class login
+    public partial class mylogin
     {
 
         /// <summary>
@@ -78,13 +78,13 @@ namespace E_learning.login
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
-        /// TextBox9 control.
+        /// pass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+        protected global::System.Web.UI.WebControls.TextBox pass;
 
         /// <summary>
         /// TextBox10 control.

@@ -79,7 +79,7 @@
     <Content Include="Admin\enquiry.aspx" />
     <Content Include="Admin\User_List.aspx" />
     <Content Include="Admin\videolist.aspx" />
-    <Content Include="login\login.aspx" />
+    <Content Include="login\mylogin.aspx" />
     <Content Include="pic\adminpic.jpg" />
     <Content Include="pic\congratulations.gif" />
     <Content Include="pic\Java-BCG-Banner.png" />
@@ -180,12 +180,12 @@
     <Compile Include="Admin\videolist.aspx.designer.cs">
       <DependentUpon>videolist.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="login\mylogin.aspx.cs">
+      <DependentUpon>mylogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="login\mylogin.aspx.designer.cs">
+      <DependentUpon>mylogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User\Add_to_cart.aspx.cs">

@@ -423,7 +423,7 @@
                     <div class="bottom-content">
                         <li>
 
-                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/login/login.aspx"><i class='bx bx-log-out icon'></i>
+                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/login/mylogin.aspx"><i class='bx bx-log-out icon'></i>
 <span class="text nav-text">Logout</span></asp:HyperLink>
 
 

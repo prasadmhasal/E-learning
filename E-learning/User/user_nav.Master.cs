@@ -42,7 +42,7 @@ namespace E_learning.User
         protected void Button2_Click(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("~/login/login.aspx");
+            Response.Redirect("~/login/mylogin.aspx");
         }
         public void Button1_Click(object sender, EventArgs e)
         {

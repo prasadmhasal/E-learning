@@ -9,8 +9,8 @@ using System.Web.UI.WebControls;
 
 namespace E_learning.login
 {
-    public partial class login1 : System.Web.UI.Page
-    { 
+    public partial class mylogin : System.Web.UI.Page
+    {
         SqlConnection conn;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -65,21 +65,13 @@ namespace E_learning.login
             string acc_username, acc_useremail, acc_userpass, urole = "User", status = "Active";
             acc_username = TextBox3.Text;
             acc_useremail = TextBox5.Text;
-            acc_userpass = TextBox9.Text;
+            acc_userpass = pass.Text;
             string q = $"exec User_res '{@acc_username}','{@acc_useremail}','{@acc_userpass}','{@urole}','{@status}'";
             SqlCommand cmd = new SqlCommand(q, conn);
             cmd.ExecuteNonQuery();
-            clear();
+
 
             Response.Write("<script>alert('Registration Successfull')</script>");
-        }
-        protected void clear()
-        {
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-            TextBox5.Text = "";
-            TextBox9.Text = "";
-            TextBox10.Text = "";
         }
     }
 }
