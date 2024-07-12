@@ -78,6 +78,7 @@
     <Content Include="Admin\dashbord.aspx" />
     <Content Include="Admin\enquiry.aspx" />
     <Content Include="Admin\User_List.aspx" />
+    <Content Include="Admin\videolist.aspx" />
     <Content Include="login\login.aspx" />
     <Content Include="pic\adminpic.jpg" />
     <Content Include="pic\congratulations.gif" />
@@ -171,6 +172,13 @@
     </Compile>
     <Compile Include="Admin\User_List.aspx.designer.cs">
       <DependentUpon>User_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\videolist.aspx.cs">
+      <DependentUpon>videolist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\videolist.aspx.designer.cs">
+      <DependentUpon>videolist.aspx</DependentUpon>
     </Compile>
     <Compile Include="login\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

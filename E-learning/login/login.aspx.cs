@@ -9,19 +9,18 @@ using System.Web.UI.WebControls;
 
 namespace E_learning.login
 {
-    public partial class login : System.Web.UI.Page
-    {
+    public partial class login1 : System.Web.UI.Page
+    { 
         SqlConnection conn;
         protected void Page_Load(object sender, EventArgs e)
         {
             string cf = ConfigurationManager.ConnectionStrings["E-Leraning"].ConnectionString;
             conn = new SqlConnection(cf);
             conn.Open();
-
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string user, pass  ;
+            string user, pass;
             user = TextBox1.Text;
             pass = TextBox2.Text;
             string q = $"exec User_login  '{@user}','{@pass}'";
@@ -39,16 +38,16 @@ namespace E_learning.login
 
                     if (rdr["acc_username"].Equals(user) && rdr["acc_userpass"].Equals(pass) && rdr["urole"].Equals("User") && rdr["status"].Equals("Active"))
                     {
-                        
+
                         Session["acc_useremail"] = rdr["acc_useremail"].ToString();
                         Session["acc_username"] = user;
                         Response.Write("<script>alert('login')</script>");
- 
+
                         Response.Redirect("~/User/UserHome.aspx");
                     }
                     if (rdr["acc_username"].Equals(user) && rdr["acc_userpass"].Equals(pass) && rdr["urole"].Equals("User") && rdr["status"].Equals("Blocked"))
                     {
-                        
+
                         Response.Write("<script>alert('Your blocked by Admin')</script>");
                     }
                 }
@@ -61,9 +60,9 @@ namespace E_learning.login
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-        
-          
-            string acc_username, acc_useremail, acc_userpass, urole = "User" ,status = "Active";
+
+
+            string acc_username, acc_useremail, acc_userpass, urole = "User", status = "Active";
             acc_username = TextBox3.Text;
             acc_useremail = TextBox5.Text;
             acc_userpass = TextBox9.Text;
@@ -79,11 +78,8 @@ namespace E_learning.login
             TextBox3.Text = "";
             TextBox4.Text = "";
             TextBox5.Text = "";
-            
             TextBox9.Text = "";
             TextBox10.Text = "";
         }
-
-      
     }
 }

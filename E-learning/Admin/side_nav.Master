@@ -392,10 +392,11 @@
                             </li>
 
                             <li class="nav-link">
-                                <a href="#">
-                                    <i class='bx bx-pie-chart-alt icon'></i>
-                                    <span class="text nav-text">View User</span>
-                                </a>
+                              
+                                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Admin/videolist.aspx"><i class='bx bx-pie-chart-alt icon'></i>
+<span class="text nav-text">Video List</span></asp:HyperLink>
+                                    
+                                
                             </li>
 
                             <li class="nav-link">

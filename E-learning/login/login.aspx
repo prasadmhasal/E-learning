@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="E_learning.login.login" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -13,7 +12,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
             <div class="container w-100">
                 <div class="row">
                     <section class="">
@@ -38,13 +36,13 @@
 
                                                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
-                                                    <div data-mdb-input-init class="form-outline mb-4">
+                                                    <div class="form-outline mb-4">
                                                        
                                                         <asp:TextBox ID="TextBox1" runat="server" class="form-control form-control-lg" placeholder="Username" ></asp:TextBox>
                                                         <label class="form-label" for="form2Example17">Username</label>
                                                     </div>
 
-                                                    <div data-mdb-input-init class="form-outline mb-4">
+                                                    <div  class="form-outline mb-4">
                                                        
                                                         <asp:TextBox ID="TextBox2" runat="server" class="form-control form-control-lg" placeholder="Password"></asp:TextBox>
                                                         <label class="form-label" for="form2Example27">Password</label>
