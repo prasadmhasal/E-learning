@@ -22,8 +22,8 @@ namespace E_learning.User
             Grandtotal = double.Parse(Session["FinalTotal"].ToString());
             Label1.Text = Grandtotal.ToString();
 
-            string q = $"INSERT INTO mycourse (course, subcourse, course_url, course_title, suser, price ,image ) " +
-            "SELECT course, subcourse, course_url, course_title, suser, price ,image  " +
+            string q = $"INSERT INTO mycourse (course, subcourse, course_url, course_title, suser, price ,image , dt ) " +
+            "SELECT course, subcourse, course_url, course_title, suser, price ,image , dt " +
             "FROM cart WHERE suser=@userID";
             SqlCommand c = new SqlCommand(q, conn);
             c.Parameters.AddWithValue("@UserID", userID);
@@ -51,8 +51,8 @@ namespace E_learning.User
         protected void Button1_Click(object sender, EventArgs e)
         {
             string userID = Session["acc_username"].ToString();
-            string q = "INSERT INTO course_history (course, subcourse, course_url, course_title, suser, price, image) " +
-               "SELECT course, subcourse, course_url, course_title, suser, price, image " +
+            string q = "INSERT INTO course_history (course, subcourse, course_url, course_title, suser, price, image ,dt ) " +
+               "SELECT course, subcourse, course_url, course_title, suser, price, image , dt  " +
                "FROM mycourse WHERE suser=@UserID";
             SqlCommand c = new SqlCommand(q, conn);
             c.Parameters.AddWithValue("@UserID", userID);

@@ -46,12 +46,12 @@ namespace E_learning.User
                     suser = acc_username;
                     price = decimal.Parse(rdr["price"].ToString());
                     image = rdr["image"].ToString();
-                    dt = DateTime.Now.ToString("d-M-yyyy");
-                    DateTime now = DateTime.Now;
+                    dt = DateTime.Now.ToString("dd-MM-yyyy");
+                    
 
                     //string ql = $"exec AddToCart '{course}','{subcourse}','{course_url}','{course_tital}','{suser}','{price}','{image}'";
-                    string ql = "INSERT INTO cart (course, subcourse, course_url, course_title, suser, price, image, dt) " +
-                         "VALUES ('" + course + "', '" + subcourse + "', '" + course_url + "', '" + course_tital + "', '" + suser + "', " + price + ", '" + image + "','" + now + "')";
+                    string ql = "INSERT INTO cart (course, subcourse, course_url, course_title, suser, price, image , dt) " +
+                         "VALUES ('" + course + "', '" + subcourse + "', '" + course_url + "', '" + course_tital + "', '" + suser + "', " + price + ", '" + image + "','"+ dt +"')";
 
                     SqlCommand c = new SqlCommand(ql, conn);
                     c.ExecuteNonQuery();
