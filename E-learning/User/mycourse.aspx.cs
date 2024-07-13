@@ -45,7 +45,7 @@ namespace E_learning.User
                 DateTime date3 = DateTime.Now;
                 if (date3 >= date2)
                 {
-                string dl = $" delete from course_history where  dt = '{date}' suser = '{Session["acc_username"].ToString()}'";
+                string dl = $" delete from course_history where  dt = '{date}' and  suser = '{Session["acc_username"].ToString()}'";
                 SqlCommand cmd2 = new SqlCommand(dl, conn);
                 SqlDataReader rdr2 = cmd2.ExecuteReader();
                 }
