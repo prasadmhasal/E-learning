@@ -40,7 +40,7 @@ namespace E_learning.User
             {
 
                 string date = rdr["dt"].ToString();
-                DateTime newdate =DateTime.Parse(date);
+                DateTime newdate = DateTime.Parse(date);
                 DateTime date2= newdate.AddDays(30);
                 DateTime date3 = DateTime.Now;
                 if (date3 >= date2)

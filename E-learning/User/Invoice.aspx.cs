@@ -51,7 +51,7 @@ namespace E_learning.User
         protected void Button1_Click(object sender, EventArgs e)
         {
             string userID = Session["acc_username"].ToString();
-            string q = "INSERT INTO course_history (course, subcourse, course_url, course_title, suser, price, image ,dt ) " +
+            string q = "INSERT INTO course_history (course, subcourse, course_url, course_title, suser, price, image , dt ) " +
                "SELECT course, subcourse, course_url, course_title, suser, price, image , dt  " +
                "FROM mycourse WHERE suser=@UserID";
             SqlCommand c = new SqlCommand(q, conn);

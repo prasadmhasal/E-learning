@@ -82,13 +82,18 @@
     <Content Include="login\mylogin.aspx" />
     <Content Include="pic\adminpic.jpg" />
     <Content Include="pic\congratulations.gif" />
+    <Content Include="pic\net.jfif" />
     <Content Include="pic\Java-BCG-Banner.png" />
+    <Content Include="pic\javabanner.jpg" />
     <Content Include="pic\maxresdefault.jpg" />
+    <Content Include="pic\python.png" />
     <Content Include="User\Add_to_cart.aspx" />
     <Content Include="User\All_Course.aspx" />
+    <Content Include="User\certification\java.aspx" />
     <Content Include="User\Contact_us.aspx" />
     <Content Include="User\css\style.css" />
     <Content Include="User\css\style.min.css" />
+    <Content Include="User\Exam.aspx" />
     <Content Include="User\img\about.jpg" />
     <Content Include="User\img\bg-image.jpg" />
     <Content Include="User\img\courses-1.jpg" />
@@ -202,12 +207,26 @@
     <Compile Include="User\All_Course.aspx.designer.cs">
       <DependentUpon>All_Course.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\certification\java.aspx.cs">
+      <DependentUpon>java.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\certification\java.aspx.designer.cs">
+      <DependentUpon>java.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\Contact_us.aspx.cs">
       <DependentUpon>Contact_us.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\Contact_us.aspx.designer.cs">
       <DependentUpon>Contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Exam.aspx.cs">
+      <DependentUpon>Exam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Exam.aspx.designer.cs">
+      <DependentUpon>Exam.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Invoice.aspx.cs">
       <DependentUpon>Invoice.aspx</DependentUpon>

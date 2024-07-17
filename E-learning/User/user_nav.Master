@@ -117,6 +117,9 @@
                         <li>
                             <asp:HyperLink ID="HyperLink6" NavigateUrl="~/User/watch_video.aspx" class="dropdown-item" runat="server">Videos</asp:HyperLink>
                         </li>
+                         <li>
+     <asp:HyperLink ID="HyperLink5" NavigateUrl="~/User/Exam.aspx" class="dropdown-item" runat="server">Examination</asp:HyperLink>
+ </li>
                     </ul>
                 </li>
                 <asp:HyperLink ID="HyperLink1" runat="server" CssClass="nav-item nav-link" NavigateUrl="~/User/Contact_us.aspx">Contact</asp:HyperLink>
