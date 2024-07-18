@@ -77,6 +77,7 @@
     <Content Include="Admin\Add_video.aspx" />
     <Content Include="Admin\dashbord.aspx" />
     <Content Include="Admin\enquiry.aspx" />
+    <Content Include="Admin\ExamResponse.aspx" />
     <Content Include="Admin\User_List.aspx" />
     <Content Include="Admin\videolist.aspx" />
     <Content Include="login\mylogin.aspx" />
@@ -163,6 +164,13 @@
     </Compile>
     <Compile Include="Admin\enquiry.aspx.designer.cs">
       <DependentUpon>enquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExamResponse.aspx.cs">
+      <DependentUpon>ExamResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExamResponse.aspx.designer.cs">
+      <DependentUpon>ExamResponse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\side_nav.Master.cs">
       <DependentUpon>side_nav.Master</DependentUpon>

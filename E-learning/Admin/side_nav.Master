@@ -416,6 +416,15 @@
                                 </asp:HyperLink>
 
                             </li>
+                            <li class="nav-link">
+
+                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Admin/ExamResponse.aspx">
+
+         <i class='bx bx-wallet icon'></i>
+         <span class="text nav-text">Exam Response</span>
+                                </asp:HyperLink>
+
+                            </li>
 
                         </ul>
                     </div>
