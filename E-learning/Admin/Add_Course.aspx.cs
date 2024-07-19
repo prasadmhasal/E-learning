@@ -23,12 +23,12 @@ namespace E_learning.Admin
         protected void Button1_Click(object sender, EventArgs e)
         {
             string course_name, sub_course;
-            double price;
+            //double price;
             course_name=TextBox1.Text;
             sub_course=TextBox2.Text;
-            price = double.Parse(TextBox3.Text);
+            //price = double.Parse(TextBox3.Text);
 
-                    string q = $"EXEC add_cource  '{course_name}','{sub_course}','{price}'";
+                    string q = $"EXEC add_cource  '{course_name}','{sub_course}'";
                     SqlCommand cmd = new SqlCommand(q, conn);
                   
 

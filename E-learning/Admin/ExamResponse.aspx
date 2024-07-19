@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid mt-4">
-        <div class="card-deck">
+    <div class="container mt-4">
+        <div class="card-deck ">
             <div class="card">
                 <asp:Image ID="Image1" class="card-img-top" runat="server" ImageUrl="~/pic/javabanner.jpg" Height="200" />
                 <div class="card-body">

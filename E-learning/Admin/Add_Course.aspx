@@ -20,10 +20,10 @@
                 <br />
 
 
-                <div class="form-group">
+                <%--<div class="form-group">
                     <asp:Label ID="PImg" runat="server" Text="Price"></asp:Label>
                      <asp:TextBox ID="TextBox3" runat="server"  CssClass="form-control"></asp:TextBox>
-                </div>
+                </div>--%>
                 <br />
                 <div class="form-group text-center mt-3">
                     <asp:Button ID="Button1" runat="server" Text="Add" CssClass="btn  btn-block w-100" style="background-color:#695cfe ; color:aliceblue" onclick="Button1_Click"  />
